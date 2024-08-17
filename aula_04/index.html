@@ -3,16 +3,64 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Aula 04 - HTML Parte 2 - Prática 3 - Cadastro de Pessoa</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <form action="/cadastro.php" method="POST">  
+            <fieldset id="bloco_geral">
+                <legend>Cadastro de Pessoa</legend>
+                    <div id="bloco_1">
+                        <ul>
+                            <li>
+                                <label form="nome">Nome:</label>
+                                <input id="nome" type="text" name="nome" maxlength="100" required>
+                    
+                            </li>
+                            <li>
+                                <label form="sobrenome">Sobrenome:</label>
+                                <input id="sobrenome" type="text" name="sobrenome" maxlength="100" required>
+                            </li>
+                            <li>
+                                <label form="email">E-mail:</label>
+                                <input id="email" type="text" name="email" maxlength="100" required>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="bloco_2">
+                        <ul>
+                            <li>
+                                <label form="data_nascimento">Data de Nascimento:</label>
+                                <input id="data_nascimento" type="date" name="data_nascimento" maxlength="100" required>
+                            </li>
+                            <li>
+                                <label form="sexo">Sexo:</label>
+                                <input id="sexo_feminino" type="radio" name="sexo_feminino" value="1">
+                                <label form="sexo_feminino">Feminino</label>
+                                <input id="sexo_masculino" type="radio" name="sexo_masculino" value="2">
+                                <label form="sexo_masculino">Masculino</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="bloco_3">
+                        <ul>
+                            <li>
+                                <label form="endereco">Endereço:</label>
+                                <input id="endereco" type="text" name="endereco" maxlength="100" required>
+                            </li>
+                             <li>
+                                <label form="cep">CEP:</label>
+                                <input id="cep" type="text" name="cep" maxlength="100" required>
+                            </li>
+                            <li>
+                                <label form="color">Color:</label>
+                                <input id="color" type="color" name="color">
+                            </li>
+                        </ul>
+                    </div>
+            </fieldset>
+        </form>
     </body>
 </html>
