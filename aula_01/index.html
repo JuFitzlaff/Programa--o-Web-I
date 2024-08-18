@@ -1,1 +1,54 @@
-teste aula 01
+<!--Prática 01 - Aula 01-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aula 01 - Prática 01</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <form action="/cadastro.php" method="POST">  
+            <fieldset>
+                <legend>Cadastro de Pessoa</legend>
+                        <ul>
+                            <li>
+                                <label form="nome">Nome:</label>
+                                <input id="nome" type="text" name="nome">
+                            </li>
+                            <li>
+                                <label form="telefone">Telefone:</label>
+                                <input id="telefone" type="number" name="telefone">
+                            </li>
+                            <li>
+                                <label form="email">E-mail:</label>
+                                <input id="email" type="text" name="email">
+                            </li>
+                            <li>
+                                <label form="tipo_pessoa">Tipo Pessoa:</label>
+                                <input id="fisica" type="radio" name="fisica" value="1">
+                                <label form="fisica">Física</label>
+                                <input id="juridica" type="radio" name="juridica" value="2">
+                                <label form="juridica">Jurídica</label>
+                            </li>
+                            <li>
+                                <label form="endereco">Endereço:</label>
+                                <input id="endereco" type="text" name="endereco">
+                            </li>
+                            <li>
+                            <select name="uf">
+                                <option value="sc">Santa Catarina</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="pr">Paraná</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            </li>
+                            <button type='submit'>Enviar</button>
+                        </ul>
+                </fieldset>
+        </form>
+    </body>
+</html>
