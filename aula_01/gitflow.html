@@ -1,0 +1,51 @@
+<!--Prática 02 - Aula 01-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aula 01 - Prática 02</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>GITFLOW</h1>
+            <p>O GITFLOW é um modelo/estratégia que auxilia no fluxo de trabalho, sendo muito utilizado por equipes no desenvolvimento 
+            de software. Seu objetivo é melhorar a organização das <i>branches</i> dentro do repositório, assim facilitando em correções 
+            de bugs, gestão de versões, colaboração entre as equipes, etc.</p>
+
+            <p>É recomendado para projetos que possuem uma grande quantidade de pessoas “commitando” dentro do repositório, 
+            ou para projetos que possuem um ciclo de entrega agendada.</p>
+
+            <p>O GITFLOW é dividido entre <i>Branches Principais</i> e <i>Branches de Suporte</i>.</p>
+
+            <p>Branches Principais:</p>
+
+            <li><b>Master/Main:</b> Possui todo o código que está em produção ou pronto para ser lançado.</li>
+
+            <li><b>Develop:</b> Possui todo o código da próxima implementação, servindo como uma linha do tempo dos últimos desenvolvimentos, 
+            que posteriormente será associado com a branch Master.</li>
+
+            <p>Branches de Suporte:</p>
+
+            <li><b>Feature:</b> São criadas a partir da branch Develop para desenvolvimento de funcionalidades específicas. 
+            A Feature é removida após realizar o merge com a branch Develop, e não pode ter nenhuma interação com a branch Master. 
+            É recomendado utilizar um padrão de nome para estas branches, sendo a forma mais utilizada iniciar com feature 
+            (ex: feature/nome-do-recurso”).</li>
+
+            <li><b>Hotfix:</b> São criadas a partir da branch Master para correções imediatas encontradas no sistema em produção. 
+            A Hotfix é removida após realizar o merge com as branches Master e Develop. O padrão de nome usado para estas branches 
+            é iniciar com hotfix (ex: hotfix/nome-da-correção)</li>
+
+            <li><b>Release:</b> São criadas a partir da branch Develop quando o código está pronto para uma nova versão, porém ainda 
+            precisa de uns ajustes finais, como correção de bugs. A Release serve como ponte para fazer a merge da Develop para a Master.
+            Funciona como um ambiente de homologação, onde é removida após realizar os testes do merge com a Master. O padrão de nome 
+            usado para estas branches é iniciar com release (ex: release/versao-a-b-c).</li>
+
+            <p>O GITFLOW possui como vantagens na questão de organização clara, definindo onde cada tipo de trabalho deve ser feito. 
+            Auxilia no controle de versão, no qual mantém o código estável na branch Master e permite o desenvolvimento paralelo na 
+            branch Develop. E também facilita na colaboração entre as equipes, que permite trabalhar em diferentes recursos e correções
+            ao mesmo tempo.</p>
+    </body>
+</html>
