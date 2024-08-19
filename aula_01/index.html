@@ -11,7 +11,7 @@
     </head>
     <body>
         <form action="/cadastro.php" method="POST">  
-            <fieldset>
+            <fieldset id="bloco_geral">
                 <legend>Cadastro de Pessoa</legend>
                         <ul>
                             <li>
@@ -38,8 +38,9 @@
                                 <input id="endereco" type="text" name="endereco">
                             </li>
                             <li>
+                            <label form="uf">Estado:</label>
                             <select name="uf">
-                                <label form="uf">Estado:</label>
+                                <option value="selecione">Selecione</option>
                                 <option value="sc">Santa Catarina</option>
                                 <option value="rs">Rio Grande do Sul</option>
                                 <option value="pr">Paraná</option>
@@ -48,7 +49,7 @@
                             </select>
                             </li>
                             <br>
-                            <button type='submit'>Enviar</button>   
+                            <button type='submit' id="botao">Enviar</button>   
                         </ul>
             </fieldset>
         </form>

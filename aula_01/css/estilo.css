@@ -1,0 +1,10 @@
+
+#bloco_geral {
+    background-color: rgb(189, 250, 184);
+    font-weight: bold;
+}
+#botao {
+    background-color: rgb(85, 144, 80);
+    border-color: rgb(85, 144, 80);
+    font-weight: bold;
+}
