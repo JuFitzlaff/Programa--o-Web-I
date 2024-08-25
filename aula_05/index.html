@@ -15,7 +15,7 @@
         <label form="num1">Número:</label>
         <input id="num1" type="number" name="num1">
     
-        <select name="operador">
+        <select name="operador" id="operador">
             <option value="1">+</option>
             <option value="2">-</option>
             <option value="3">*</option>
@@ -24,6 +24,8 @@
 
         <input id="num2" type="number" name="num2">
 
-        <button type='submit' id="botao">Enviar</button>
+        <button type='submit' id="botao" onclick="resultado()">Resultado</button>
+
+        <p id="resultado"></p>
     </body>
 </html>
