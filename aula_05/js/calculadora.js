@@ -23,16 +23,26 @@ function dividir() {
 }
 
 function resultado() {
-    let operador = document.getElementById("operador");
-    let result;
-        if (operador.value == 1) {
-            result = somar();
-        } else if (operador.value  == 2) {
-            result = subtrair();
-        } else if (operador.value  == 3) {
-            result = multiplicar();
-        } else if (operador.value  == 4) {
-            result = dividir();
-        }
-        document.getElementById("resultado").innerHTML = "Resposta: " + result;  
+    let operador = parseInt(document.getElementById("operador").value);
+    if (operador == 1) {
+        return somar();
+    } else if (operador  == 2) {
+        return subtrair();
+    } else if (operador == 3) {
+        return multiplicar();
+    } else if (operador == 4) {
+        return dividir();
+    }  
+}
+function resultadoEstilo() {
+    let resposta = resultado();
+    let result = document.getElementById("resultado");
+    if (resposta > 0) {
+        result.style.backgroundColor = 'green';
+    } else if (resposta < 0) {
+        result.style.backgroundColor = 'red';
+    } else {
+        result.style.backgroundColor = 'gray';
+    }
+    result.value = resposta;
 }
