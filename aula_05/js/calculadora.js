@@ -34,5 +34,5 @@ function resultado() {
         } else if (operador.value  == 4) {
             result = dividir();
         }
-        document.getElementById("resultado").innerHTML = result;  
+        document.getElementById("resultado").innerHTML = "Resposta: " + result;  
 }
