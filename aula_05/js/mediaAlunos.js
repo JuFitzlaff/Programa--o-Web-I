@@ -23,10 +23,10 @@ function apresentaMediaNotas() {
     let linhaMedia = tabela.insertRow(-1); 
     let celula = linhaMedia.insertCell(0);
 
-    celula.innerHTML = "Média por Nota";
+    celula.innerHTML = "Média Notas";
 
-    for(let i = 0; i <= 8; i++) {
-        let celula = linhaMedia.insertCell(i + 1);
-            celula.innerHTML = media[i].toFixed(2);
+    for(let col = 0; col <= 8; col++) {
+        let celula = linhaMedia.insertCell(col + 1);
+            celula.innerHTML = media[col].toFixed(2);
    }
 }
